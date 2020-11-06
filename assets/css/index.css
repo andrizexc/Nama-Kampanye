@@ -1,0 +1,356 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    height: 100%;
+}
+.header-atas{
+    position: absolute;
+    top: 0;
+    right: 270px;
+    color: #fff;
+}
+.header-atas h1{
+    padding-top: 20px;
+    font-family: NM-L;
+    font-size: 57px;
+    margin-left: 7px;
+}
+.header-bawah{
+    position: absolute;
+    bottom: 50px;
+    left: 28px;
+    color: #fff;
+}
+.header-bawah h1{
+    padding-top: 20px;
+    font-family: NM-R;
+    font-size: 96px;
+    margin-left: -7px;
+    line-height: 1;
+}
+.header-bawah p{
+    padding-top: 10px;
+    font-family: NM-R;
+    font-size: 20px;
+    display: none;
+}
+
+.statistik{
+    margin-bottom: 100px;
+}
+.statistik h2{
+    font-family: NM-R;
+    text-align: center;
+}
+.statistik p{
+    font-family: SM-R;
+    text-align: center;
+    font-size: 25px;
+}
+.statistik .content-statistik{
+    font-family: SM-R;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.element:after{
+ border: 1px solid #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 100%;
+    right: 100%;
+    content: '';
+    z-index: 0;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: lenear;
+    -webkit-animation-fill-mode: forwards;
+}
+.element.animateMe:after{
+ border: 1px solid #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 100%;
+    right: 100%;
+    content: '';
+    z-index: 0;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: lenear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes border {
+    from {
+        bottom: 2px;
+        top: 2px;
+    }
+    to {
+        bottom: -8px;
+        right: -1px;
+    }
+}
+
+.statistik .content-statistik img{
+    width: 25px;
+    transform: rotate(-90deg);
+    background: #f94e4e;
+    padding: 8px 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.statistik .content-statistik h1{
+    font-family: NM-L;
+    font-size: 79px;
+    padding-bottom: 50px;
+}
+.statistik .content-statistik h5{
+    font-family: SM-R;
+    padding-top: 5px;
+}
+.statistik .btn-statistik{
+    margin-top: 50px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+.statistik .btn-statistik a{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.statistik .btn-statistik a .baca-lengkap{
+    height: 100%;
+    width: 160px;
+    background: #fff;
+    border-radius: 100px;
+    position: absolute;
+}
+.statistik .btn-statistik a img{
+    width: 20px;
+}
+
+.left-column
+{
+  width: 50%;
+  min-height: 400px;
+ position: absolute;
+    border: 1px solid ;
+  float: left;
+
+    left: 0;
+}
+.right-column
+{
+  position: absolute;
+  width: 50%;
+  min-height: 400px;
+ border: 1px solid ;
+  float: right;
+    right: 0px;
+}
+       
+.metode-terapan {
+    padding: 0px 28px;
+    margin-bottom: 100px;
+}
+.metode-terapan .row{
+  
+}
+.metode-terapan h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.metode-terapan .box-metode-terapan {
+   
+    border-left: none;
+    border-right: none;
+    height: 400px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    width:100%;
+    position: relative;
+}
+
+
+
+.box-metode-terapan:before
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.box-metode-terapan:after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.metode-terapan .border-r .klik{
+    padding: 10px 10px 0px 0px;
+}
+.metode-terapan .border-l{
+    border-left: 1px solid #fff !important;
+}
+.metode-terapan .border-l .klik{
+    padding: 10px 0px 0px 0px;
+}
+.metode-terapan .border-l h2{
+    padding: 10px 0px 0px 20px;
+}
+.metode-terapan .border-l .content-metode-terapan{
+    padding: 0px 0px 0px 20px;
+}
+.metode-terapan  h2{
+    font-family: SM-B;
+    padding: 10px 0px 0px 0px;
+    color: #f94e4e;
+}
+.metode-terapan  .klik{
+    font-family: SM-R;
+    color: red;
+}
+.metode-video {
+    width: 0px;
+    float: left;
+    padding: 42px 42px 13px 12px;
+    right: 0;
+    position: absolute;
+}
+.metode-videox {
+    width: 0px;
+    float: right;
+    padding: 42px 12px 13px 12px;
+    left:800px;
+    position: absolute;
+}
+.metode-terapan  .content-metode-terapan{
+    position: absolute;
+    bottom: 0;
+    font-family: Helv;
+    padding: 12px;;
+}
+.metode-terapan .baca-lengkap{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    float: right;
+}
+.metode-terapan .baca-lengkap img{
+    width: 20px;
+}
+
+.rangkaian-hidup {
+    margin-bottom: 100px;
+    padding: 0px 45px;
+}
+.rangkaian-hidup .box-rangkaian-hidup{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+.rangkaian-hidup h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.rangkaian-hidup .about-rangkaian-hidup{
+    position: absolute;
+    bottom: 0;
+    font-family: Helv;
+    padding: 0;
+}
+.rangkaian-hidup .baca-lengkap{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.dokumen-potensi {
+    margin-bottom: 100px;
+    padding: 0px 28px;
+}
+
+.dokumen-potensi h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+
+.dokumen-potensi .about-dokumen-potensi{
+    position: absolute;
+    bottom: -10px;
+    font-family: Helv;
+    padding: 0;
+}
+
+.dokumen-potensi .doc-profil{
+    margin-top: 50px;
+    padding-right: 32px;
+    
+}
+.dokumen-potensi .text-profil{
+    color: #000;
+    background: #fff;
+    font-family: NM-U;
+    font-size: 17px;
+    margin: 0;
+    width: 110px;
+    padding-top: 2px;
+    padding-left: 10px;
+    margin-left: -15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+}
+.dokumen-potensi a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.dokumen-potensi a h2{
+    font-family: SM-B;
+    font-size: 28px;
+    padding-top: 7px;
+}
+.dokumen-potensi a img{
+    max-width: 30px;
+    height: 30px;
+    background: #f94e4e;
+    padding: 10px 8px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.store {
+    margin-bottom: 100px;
+    padding: 0px 28px;
+}
+
+.store h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.store h2{
+    font-family: SM-B;
+    font-size: 28px;
+}
+
+.store .about-store{
+    position: absolute;
+    bottom: -10px;
+    font-family: Helv;
+    padding: 0;
+}
