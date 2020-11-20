@@ -17,7 +17,7 @@ html, body{
 .header-atas h1{
     padding-top: 20px;
     font-family: NM-L;
-    font-size: 57px;
+    font-size: 40px;
     margin-left: 7px;
 }
 .header-bawah{
@@ -26,12 +26,10 @@ html, body{
     left: 28px;
     color: #fff;
 }
-.header-bawah h1{
+.header-bawah img{
     padding-top: 20px;
-    font-family: NM-R;
-    font-size: 96px;
     margin-left: -7px;
-    line-height: 1;
+    width: 50%;
 }
 .header-bawah p{
     padding-top: 10px;
@@ -58,35 +56,17 @@ html, body{
     padding-left: 0;
     padding-right: 0;
 }
-.element:after{
+
+.statistik .content-statistik .border-statistika{
  border: 1px solid #fff;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 100%;
-    right: 100%;
-    content: '';
-    z-index: 0;
-    -webkit-animation-name: border;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: lenear;
-    -webkit-animation-fill-mode: forwards;
 }
-.element.animateMe:after{
- border: 1px solid #fff;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 100%;
-    right: 100%;
-    content: '';
-    z-index: 0;
-    -webkit-animation-name: border;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: lenear;
-    -webkit-animation-fill-mode: forwards;
+.statistik .content-statistik button{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+body{
+    padding-right: 0px !important;
 }
 
 @-webkit-keyframes border {
@@ -100,6 +80,14 @@ html, body{
     }
 }
 
+.statistik .content-statistik .btn-tutup{
+    width: 25px;
+    transform: rotate(90deg);
+    background: #000;
+    padding: 8px 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
 .statistik .content-statistik img{
     width: 25px;
     transform: rotate(-90deg);
@@ -117,6 +105,28 @@ html, body{
     font-family: SM-R;
     padding-top: 5px;
 }
+
+.statistik .content-statistik .modal-statistika-index{
+    background: #f94e4e;
+    position: absolute;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow: auto;
+    height: auto;
+    width: auto;
+}
+.statistik .content-statistik .modal-statistika-index p{
+    font-family: Helv;
+    font-size: 12px !important;
+    text-align: left;
+}
+.modal-backdrop{
+    display: none;
+}
+.modal-open{
+    overflow: auto !important;
+}
+
 .statistik .btn-statistik{
     margin-top: 50px;
     border: 1px solid #fff;
@@ -147,7 +157,7 @@ html, body{
  position: absolute;
     border: 1px solid ;
   float: left;
-
+cursor: pointer;
     left: 0;
 }
 .right-column
@@ -158,6 +168,7 @@ html, body{
  border: 1px solid ;
   float: right;
     right: 0px;
+cursor: pointer;
 }
        
 .metode-terapan {
@@ -172,7 +183,6 @@ html, body{
     font-size: 60px;
 }
 .metode-terapan .box-metode-terapan {
-   
     border-left: none;
     border-right: none;
     height: 400px;
@@ -181,6 +191,25 @@ html, body{
     padding: 0;
     width:100%;
     position: relative;
+}
+
+.Modalvideo{
+    background: rgba(0, 0, 0, 0.8);
+}
+.Modalvideo iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.Modalvideo button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 36px;
 }
 
 
@@ -197,20 +226,11 @@ html, body{
   clear: both;
   display: table;
 }
-.metode-terapan .border-r .klik{
-    padding: 10px 10px 0px 0px;
-}
-.metode-terapan .border-l{
-    border-left: 1px solid #fff !important;
-}
-.metode-terapan .border-l .klik{
-    padding: 10px 0px 0px 0px;
-}
-.metode-terapan .border-l h2{
-    padding: 10px 0px 0px 20px;
-}
-.metode-terapan .border-l .content-metode-terapan{
-    padding: 0px 0px 0px 20px;
+.metode-terapan .klik{
+    padding-top: 10px;
+    padding-left: 0px !important;
+    padding-right: 30px !important;
+    text-align: right;
 }
 .metode-terapan  h2{
     font-family: SM-B;
@@ -223,17 +243,19 @@ html, body{
 }
 .metode-video {
     width: 0px;
-    float: left;
-    padding: 42px 42px 13px 12px;
-    right: 0;
-    position: absolute;
+    padding: 15px 0px 0px 0px;
+    float: right;
+    position: relative;
+    left: 130px;
+    cursor: pointer;
 }
 .metode-videox {
     width: 0px;
-    float: right;
-    padding: 42px 12px 13px 12px;
-    left:800px;
-    position: absolute;
+    padding: 15px 0px 0px 0px;
+    float: left;
+    position: relative;
+    left: 250px;
+    cursor: pointer;
 }
 .metode-terapan  .content-metode-terapan{
     position: absolute;
@@ -247,6 +269,7 @@ html, body{
     text-decoration: none;
     border: none;
     float: right;
+    padding-right: 15px;
 }
 .metode-terapan .baca-lengkap img{
     width: 20px;
@@ -353,4 +376,30 @@ html, body{
     bottom: -10px;
     font-family: Helv;
     padding: 0;
+}
+
+.btn-add-cart {
+    display: none;
+    color: white;
+    background-color: #f94e4e;
+    line-height: 30px;
+    font-family: SM-B;
+    font-size: 17px;
+    z-index: 99;
+}
+
+.swiper3 .swiper-slide:hover .btn-add-cart {
+    display: block;
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper3 .swiper-slide:hover btn-add-cart {
+    filter: none;
+    -webkit-filter: grayscale(0%);
 }

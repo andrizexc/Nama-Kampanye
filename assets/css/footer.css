@@ -60,7 +60,12 @@
 }
 
 
-
+.logo-footer{
+    margin-top: -20px;
+}
+.logo-footer img{
+    width: 250px;
+}
 .img-footer {
     width: 130px;
    float: left;

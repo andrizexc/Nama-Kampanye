@@ -139,6 +139,11 @@ html, body{
     font-size: 38.7px;
     margin-bottom: 100px;
 }
+.artikel-4 .swiper-container .content-slider-artikel h5{
+    font-family: NM-U;
+    font-size: 22px;
+    margin-top: 100px;
+}
 .artikel-4 .swiper-container .content-slider-artikel p{
     padding-right: 50px;
     font-family: Helv;
@@ -156,11 +161,17 @@ html, body{
 .artikel-4 .swiper-container .portofolio-artikel p{
     font-family: SM-R;
 }
-.artikel-4 .swiper-container .portofolio-artikel img{
+.artikel-4 .swiper-container .portofolio-artikel  .img-bahan-foto-2627{
     width: 100%;
 }
+.artikel-4 .swiper-container .portofolio-artikel  .img-bahan-foto-2524{
+    width: 70%;
+}
+.artikel-4 .swiper-container .portofolio-artikel  .img-bahan-foto-2829{
+    width: 55%;
+}
 .artikel-4 .swiper-container .portofolio-artikel .col-md-12{
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 

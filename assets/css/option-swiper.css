@@ -94,6 +94,7 @@
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+    text-decoration: none;
 }
 
 .rangkaian-hidup .swiper-slide img{
@@ -104,7 +105,7 @@
 .rangkaian-hidup .swiper-slide-active{
     margin-right: 155px;
 }
-.rangkaian-hidup .swiper-slide-active > .text-slider{
+.rangkaian-hidup .swiper-slide-active:hover .text-slider{
     display: block;
 }
 
@@ -127,15 +128,20 @@
     left: -10;
     width: 300px;
     text-align: left;
-    display: none
+    display: none;
+    text-decoration: none;
 }
 .rangkaian-hidup .text-slider h1{
     font-family: SM-B;
     font-size: 31px;
+    text-decoration: none;
+    color: #fff;
 }
 .rangkaian-hidup .text-slider p{
     font-family: SM-R;
     font-size: 14px;
+    text-decoration: none;
+    color: #fff;
 }
 
 
