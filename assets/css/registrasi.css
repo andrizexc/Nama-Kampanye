@@ -1,8 +1,8 @@
 html, body{
     margin: 0;
     height: 100%;
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
 }
 
 .header{
@@ -38,7 +38,7 @@ html, body{
 .form input{
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     color: #fff;
 }
 .tool-kirim {
@@ -68,11 +68,11 @@ html, body{
 .mx {
     float: right;
     width: 500px;
-    color: white;
+    color: #000000;
 }
 .mx a {
     padding: 12px;
-    color: #ffffff;
+    color: #000000;
     font-family: SM-B;
 }
     
